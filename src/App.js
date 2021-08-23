@@ -1,13 +1,16 @@
-import './App.css';
+import Home from './page/Home';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { withAuthenticator } from '@aws-amplify/ui-react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello!! :D</h1>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -29,5 +29,11 @@
       "type": "cicd",
       "lastPushTimeStamp": "2021-08-22T13:50:07.419Z"
     }
+  },
+  "storage": {
+    "amplifypracticeS3": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
